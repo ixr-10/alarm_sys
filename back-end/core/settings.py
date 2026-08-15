@@ -79,6 +79,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+
 CELERY_BROKER_URL = config('REDIS_URL')
 CELERY_RESULT_BACKEND = config('REDIS_URL')
 CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
